@@ -21,8 +21,8 @@ const fromEuroToDollar = function(valueInEuro) {
     let valueInDollar = valueInEuro * 1.07;
     return valueInDollar;
 }
-const fromDollarToYen = function(value){
-    let valueInEuro = value/ oneEuroIs["USD"];
+const fromDollarToYen = (valueInDollar) => {
+    let valueInEuro = valueInDollar/ oneEuroIs["USD"];
     let valueInYen = valueInEuro * oneEuroIs["JPY"];
     return valueInYen;
 }

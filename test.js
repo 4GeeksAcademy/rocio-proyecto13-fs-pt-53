@@ -1,11 +1,11 @@
-const { fromEuroToDollar, fromYenToPound } = require('./app.js');
+const { fromEuroToDollar,fromDollarToYen, fromYenToPound } = require('./app.js');
 
 test("One euro should be 1.07 dollars", function() {
     const expected = 3.5 * 1.07;
     expect(fromEuroToDollar(3.5)).toBe(expected);
 })
 
-test("One dollar should be ",function() {
+test("One dollar should be 511.91", () => {
     const expected = (3.5 / 1.07) * 156.5;
     expect(fromDollarToYen(3.5)).toBe(expected);
 })
